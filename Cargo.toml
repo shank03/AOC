@@ -1,10 +1,12 @@
 [package]
-name = "aoc-2k24"
+name = "aoc"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 author = "Shashank Verma (shank03)"
 
 [dependencies]
+lib-core = { path = "./lib-core" }
+lib-2024 = { path = "./lib-2024" }
+
 clap = { version = "4.5.21", features = ["derive"] }
-regex = "1.11.1"
 reqwest = { version = "0.12.9", features = ["blocking"] }

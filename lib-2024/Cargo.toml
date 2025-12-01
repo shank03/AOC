@@ -1,0 +1,9 @@
+[package]
+name = "lib-2024"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lib-core = { path = "../lib-core" }
+
+regex = "1.11.1"
