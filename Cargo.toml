@@ -7,6 +7,7 @@ author = "Shashank Verma (shank03)"
 [dependencies]
 lib-core = { path = "./lib-core" }
 lib-2024 = { path = "./lib-2024" }
+lib-2025 = { path = "./lib-2025" }
 
 clap = { version = "4.5.21", features = ["derive"] }
 reqwest = { version = "0.12.9", features = ["blocking"] }

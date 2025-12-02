@@ -23,7 +23,6 @@ enum Command {
 }
 
 #[derive(Args)]
-#[group(multiple = false)]
 struct InputEvent {
     #[arg()]
     day: usize,
@@ -45,6 +44,7 @@ fn run_input(InputEvent { day, year }: InputEvent) {
 
     match year {
         2024 => lib_2024::run_input(day),
+        2025 => lib_2025::run_input(day),
         _ => println!("Unknown year: {year}"),
     };
 }
@@ -64,6 +64,7 @@ fn download_input(InputEvent { day, year }: InputEvent) {
         let text = res.text().expect("Failed to read response for AOC input");
         match year {
             2024 => lib_2024::save_input(text, day),
+            2025 => lib_2025::save_input(text, day),
             _ => println!("Unknown year input: {year}"),
         };
     } else {
