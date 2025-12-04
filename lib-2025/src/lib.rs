@@ -1,6 +1,7 @@
 use lib_core::Day;
 
 mod day01;
+mod day02;
 
 pub fn run_input(day: usize) {
     println!("=== Running DAY {:02} ===", day);
@@ -8,6 +9,7 @@ pub fn run_input(day: usize) {
     let file = format!("lib-2025/inputs/day{:02}.txt", day);
     match day {
         1 => day01::Day01::run(&file),
+        2 => day02::Day02::run(&file),
         _ => println!("unknown day"),
     };
 }
